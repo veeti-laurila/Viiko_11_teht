@@ -10,9 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ItemViewHolder extends RecyclerView.ViewHolder {
 
-    TextView name;
+    TextView name, important;
     ImageView delete, edit;
-
     EditText editName;
 
     public ItemViewHolder(@NonNull View itemView) {
@@ -22,5 +21,6 @@ public class ItemViewHolder extends RecyclerView.ViewHolder {
         delete = itemView.findViewById(R.id.imageViewDelete);
         edit = itemView.findViewById(R.id.imageViewEdit);
         editName = itemView.findViewById(R.id.editName);
+        important = itemView.findViewById(R.id.textViewImportant);
     }
 }

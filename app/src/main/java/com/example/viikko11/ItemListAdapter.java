@@ -29,6 +29,7 @@ public class ItemListAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         holder.name.setText(items.get(position).getName());
         holder.editName.setText(items.get(position).getName());
+        holder.important.setText(items.get(position).getSuperImportant());
 
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
